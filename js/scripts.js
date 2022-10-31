@@ -13,7 +13,7 @@ let pokemonRepository = (function () {
     add: add,
     getAll: getAll
   };
-})();
+})();  //IIFE to safely lock everything into place
 
 let pokemonList = [
 
