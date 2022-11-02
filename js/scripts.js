@@ -53,6 +53,15 @@ let addPokemonEventListener = function(element, pokemon) {
   element.addEventListener("click", () => showDetails(pokemon));
 };
 
+// unable to create the functions properly below
+let showDetails = function (pokemon) {
+  loadDetails('listItem')
+};
+
+  let loadDetails = function (pokemon) {
+  return fetch('listItem')};
+
+//unable
 
 
 pokemonList.forEach(function(pokemon) {
