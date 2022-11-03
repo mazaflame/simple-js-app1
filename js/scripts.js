@@ -49,20 +49,23 @@ let pokemonList = [
 
 ]
 
-let addPokemonEventListener = function(element, pokemon) {
-  element.addEventListener("click", () => showDetails(pokemon));
-};
+// I tried the code below first:
+//let addPokemonEventListener = function(element, pokemon) {
+//  element.addEventListener("click", () => showDetails(pokemon));
+//};
 
-// unable to create the functions properly below
-let showDetails = function (pokemon) {
-  loadDetails('listItem')
-};
+//then I started the one below
 
-  let loadDetails = function (pokemon) {
-  return fetch('listItem')};
+function eventListener(button, pokemon) {
+  button.addEventListener("click", function() {
+    showDetails(pokemon);
+  });
 
-//unable
+}
 
+function showDetails(pokemon) {
+  console.log(pokemon.name);
+}
 
 pokemonList.forEach(function(pokemon) {
   let pokemonList = document.querySelector(".pokemon-list");
