@@ -1,3 +1,29 @@
+
+#modal-container {
+  display: none;
+}
+#modal-container.is-visible {
+  position: fixed;
+  padding: 20px;
+  box-sizing: border-box;
+  top: 0;
+  left: 0;
+  width: 70%;
+  height: 70%;
+  background: rgba(0, 0, 0, 0.5);
+  
+  /* to show it above other content */
+  z-index: 999; 
+  
+  /* to allow scrolling if the screen is not high enough*/
+  overflow: auto; 
+  
+  /* to center the modal */
+  display: grid;
+  text-align: center;
+}
+
+
 .stylez {
   background-color: red;
   border: none;
@@ -14,4 +40,57 @@
   background-color: white;
   color: black;
   border: 2px solid #4caf50;
+}
+
+body{
+font-family: 'Courier New', Courier, monospace;
+font-size: 10px;
+
+}
+
+
+
+
+.modal{
+
+  /*display:none */
+
+  position:fixed;
+  z-index:1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow:auto;
+  background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content{
+background-color: #f4f4f4;
+margin:30% auto;
+padding:20px;
+width:90%;
+
+
+}
+
+.close-Btn{
+color:#ccc;
+float: right;
+font-size: 40px;
+
+
+}
+
+.closeBtn:hover{
+
+  color:black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.container {
+  text-align: center;
+  align-items: center;
+  margin-top: 5rem;
 }
