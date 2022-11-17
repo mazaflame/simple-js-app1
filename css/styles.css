@@ -1,8 +1,44 @@
+
+:root {
+  /* colors */
+  --yellow: #ffa600;
+  --blue: #3bc490;
+  --font-weight-h: 700;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  align-items: center;
+  background-color: var(--yellow);
+  font-family: 'Bebas Neue', cursive;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+h1 {
+  align-items: center;
+  color: var(--dark-grey);
+  font-size: 40px;
+  font-weight: var(--font-weight-h);
+  margin: 0;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+ul {
+  list-style-type: none;
+ }
+
 .bstylez {
+  align-items: center;
   background-color: red;
   border: none;
   color: white;
   padding: 20x 32px;
+  background-size: calc(100% + 20px) calc(100% + 20px);
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -16,20 +52,49 @@
   border: 2px solid #4caf50;
 }
 
+button:active,
+button:focus {
+  outline: none;
+}
+
+button:hover {
+  background-position: -20px -20px;
+}
+.container {
+  text-align: center;
+  align-items: center;
+
+}
+.modal {
+  margin: auto;
+  display: inline-block;
+  box-sizing: border-box;
+  background: #fff;
+  padding: 30px;
+  width: 100%;
+  max-width: 700px;
+  text-align: center;
+}
+
 .modal-close {
+  position: relative;
+  top: -300px;
+  right: 20px;
+
 
   float:right;
   border:0;
   background:none;
-  color: black;
+  color: #4caf50;
   text-decoration: underline;
+  cursor: pointer;
 }
 
 #modal-container {
   display: none;
 }
 
-#modal-container.is-visible {
+.modal-container.is-visible {
   position: fixed;
   padding: 20px;
   box-sizing: border-box;
@@ -39,24 +104,17 @@
   height: 100%;
   background: rgba(0, 0, 0, 0.5);
 
-  /* to show it above other content */
+  /* show it above other content */
   z-index: 999; 
 
-  /* to allow scrolling if the screen is not high enough*/
+  /*  allow scrolling if the screen is not high enough*/
   overflow: auto; 
 
-  /* this is used to center the modal */
+  /*  used to center the modal */
   display: block;
   text-align: center;
 }
 
 
-button:active,
-button:focus {
-  outline: none;
-}
 
-button:hover {
-  background-position: -20px -20px;
-}
 
