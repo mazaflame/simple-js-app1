@@ -63,13 +63,14 @@ button:hover {
 .container {
   text-align: center;
   align-items: center;
+  background: rgba(255, 255, 255, 0.359);
 
 }
 .modal {
   margin: auto;
   display: inline-block;
   box-sizing: border-box;
-  background: #fff;
+  background:#4caf50;
   padding: 30px;
   width: 100%;
   max-width: 700px;
@@ -77,6 +78,7 @@ button:hover {
 }
 
 .modal-close {
+  color: black;
   position: relative;
   top: -300px;
   right: 20px;
@@ -85,7 +87,7 @@ button:hover {
   float:right;
   border:0;
   background:none;
-  color: #4caf50;
+  
   text-decoration: underline;
   cursor: pointer;
 }
@@ -115,6 +117,10 @@ button:hover {
   text-align: center;
 }
 
-
+h1 {
+  font-size: 30px;
+  font-weight: 700;
+  color: var(--dark-grey);
+}
 
 
